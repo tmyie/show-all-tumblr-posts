@@ -25,8 +25,7 @@ $.fn.showAllPosts = function() {
 					var $hasPosts = $(data).find('.posts-checker').length;
 					if ($hasPosts) {
 						var $batch = $(data).find($containerID).html();
-						
-       					$($batch).appendTo($containerID);
+						$($batch).appendTo($containerID);
 						$next++;
 						loadBatch();
 					} else {
